@@ -313,7 +313,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9144901857906665098, guid: a746cb5b9982448b6964976d2c6e5959, type: 3}
       propertyPath: story
-      value: Now ehere shall we go? I could go to Famer Maggots farm or the Foreboding
+      value: Now where shall we go? I could go to Famer Maggots farm or the Foreboding
         Forest
       objectReference: {fileID: 0}
     - target: {fileID: 9144901857906665098, guid: a746cb5b9982448b6964976d2c6e5959, type: 3}

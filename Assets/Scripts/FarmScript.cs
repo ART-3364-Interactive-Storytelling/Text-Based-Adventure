@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class SceneController : MonoBehaviour
+public class FarmScript : MonoBehaviour
 {
     [Header("UI References")]
     public Image backgroundImage;
@@ -15,13 +15,18 @@ public class SceneController : MonoBehaviour
 
     [Header("Scene Data")]
     public Sprite backgroundSprite;
-    [TextArea(3, 10)]
+    [TextArea(3,10)]
     public string story;
     public string choice1Text;
     public string choice1Scene;
     public string choice2Text;
     public string choice2Scene;
 
+
+    void Eat()
+    {
+        GameManager.Instance.Heal(10.0f);
+    }
     void Start()
     {
         // Set background and story
@@ -31,10 +36,10 @@ public class SceneController : MonoBehaviour
             storyText.text = story;
 
         // Setup Choice 1
-        if (!string.IsNullOrEmpty(choice1Text) && !string.IsNullOrEmpty(choice1Scene))
+        if (!string.IsNullOrEmpty(choice1Text) )
         {
             button1Text.text = choice1Text;
-            choiceButton1.onClick.AddListener(() => SceneManager.LoadScene(choice1Scene));
+            choiceButton1.onClick.AddListener(() => Eat());
             choiceButton1.gameObject.SetActive(true);
         }
         else
@@ -54,16 +59,4 @@ public class SceneController : MonoBehaviour
             choiceButton2.gameObject.SetActive(false);
         }
     }
-
-    void Awake()
-    {
-        if (SceneManager.GetActiveScene().name == "Forest" || 
-            SceneManager.GetActiveScene().name == "Cave" || 
-            SceneManager.GetActiveScene().name == "Vampire" ||
-            SceneManager.GetActiveScene().name == "Castle" )
-        {
-            GameManager.Instance.TakeDamage(30.0f);
-        }
-    }
-
 }

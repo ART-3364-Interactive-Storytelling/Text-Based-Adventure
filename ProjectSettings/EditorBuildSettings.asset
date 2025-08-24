@@ -14,6 +14,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Bed.unity
     guid: 7f3866a834596460a9b6291f1077ec2e
+  - enabled: 1
+    path: Assets/Scenes/Crossroads.unity
+    guid: c9e8bca5d8c4d4baf948d1e93582f038
+  - enabled: 1
+    path: Assets/Scenes/Farm.unity
+    guid: 807906603ac754ed39afdfe68bef1230
+  - enabled: 1
+    path: Assets/Scenes/Forest.unity
+    guid: b4928f7d3f86a4e39a6c4e6f6aa218b9
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -18,7 +18,11 @@ This guide explains how to use your UI prefab to quickly set up a new scene for 
 
 ---
 
-## 3. Assign Scene-Specific Content
+## 3. Add the UI EventSystem
+
+ 1. Click in the **hierachy** and add ```UI -> EventSystem```
+
+## 4. Assign Scene-Specific Content
 
 1. **Select the Canvas** (or the GameObject with your `SceneController` script).
 2. In the **Inspector**, you’ll see fields for:
@@ -31,6 +35,9 @@ This guide explains how to use your UI prefab to quickly set up a new scene for 
 5. **Set up the choices:**
     - For each button, enter the button text and the name of the scene it should load.
     - If a choice is not needed, leave its text and scene fields empty to hide the button.
+
+> [!IMPORTANT]
+> Your buttons won't show if they don't have button text and a button scene. You can use a temporaty placeholder name for a scene if you haven't created it yet.
 
 ---
 
@@ -59,5 +66,5 @@ This guide explains how to use your UI prefab to quickly set up a new scene for 
 
 ---
 
-**Tip:**  
-If you update the prefab, all scenes using it will
+> [!TIP]
+>  If you update and item in the prefab, all scenes using it will have the same update applied. If you update the item in a scene it will onkly apply to that scene.

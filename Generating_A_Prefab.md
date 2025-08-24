@@ -35,7 +35,7 @@ Canvas
 4. Inside `StoryPanel`, add:
    - `UI > Text - TextMeshPro` (rename to `StoryText`)
 5. Inside each button, add:
-   - `UI > Text - TextMeshPro` (rename to `ButtonText1` and `ButtonText2`)
+   - Rename the button text to `ButtonText1` and `ButtonText2`
 
 ### 2. Arrange and Anchor the UI
 
@@ -51,20 +51,7 @@ Canvas
 - **Buttons:**  
   Place the buttons below or beside the StoryPanel as desired.
 
-### 3. Make the Prefab
-
-1. **Select the Canvas** in the Hierarchy.
-2. **Drag the Canvas** into your Project window (e.g., into `Assets/Prefabs/`).
-3. This creates a prefab you can reuse in every scene.
-
-### 4. Using the Prefab
-
-- In each new scene, drag the prefab from your Project window into the Hierarchy.
-- Set the background image, story text, and button choices in the Inspector for each scene.
-
----
-
-## Example Script for Scene Navigation
+## 3. Script for Scene Navigation
 Create a script (e.g., `SceneController.cs`) and attach it to the Canvas or a child GameObject:
 
 ```csharp
@@ -126,16 +113,21 @@ public class SceneController : MonoBehaviour
     }
 }
 ```
-* Assign the scene fields in the Inspector to the appropriate scene names.
-* Set the button’s OnClick event to call the appropriate method.
 
----
+* Drag the script from the project pane onto the Canvas in the hierarchy.
+* Assign the scene fields in the Inspector to the appropriate scene namesby dragging from the hierchy to the inspector.
 
-## Scene Creation
-1. Create 13 scenes in your Scenes folder with the names listed above.
-2. Set up the UI as described for each.
-3. Assign the correct background PNG and story text per scene.
-4. Configure the buttons to point to the correct next scene(s) as per your map.
+
+### 3. Make the Prefab
+
+1. **Select the Canvas** in the Hierarchy.
+2. **Drag the Canvas** into your Project window (e.g., into `Assets/Prefabs/`). **Make sure you're dragging the canvas and not the whole scene**
+3. This creates a prefab you can reuse in every scene.
+
+### 4. Using the Prefab
+
+- In each new scene, drag the prefab from your Project window into the Hierarchy.
+- Set the background image, story text, and button choices in the Inspector for each scene in the Scene Data section of the Canvas.
 
 ### Example: MainMenu Scene
 * Background: main_menu.png

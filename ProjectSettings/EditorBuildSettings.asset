@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OutsideHole.unity
     guid: 3e3387695ded5471ebb457454d96363a
+  - enabled: 1
+    path: Assets/Scenes/Bed.unity
+    guid: 7f3866a834596460a9b6291f1077ec2e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
@@ -23,6 +23,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Forest.unity
     guid: b4928f7d3f86a4e39a6c4e6f6aa218b9
+  - enabled: 1
+    path: Assets/Scenes/Castle.unity
+    guid: 8ca602a844deb49fd9d33a76b8640837
+  - enabled: 1
+    path: Assets/Scenes/Dragon.unity
+    guid: 35919d9a560234b95bd8d3ff4e985fac
+  - enabled: 1
+    path: Assets/Scenes/Vampire.unity
+    guid: 1ce88df2a78be4de4a8c5329e415bb01
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

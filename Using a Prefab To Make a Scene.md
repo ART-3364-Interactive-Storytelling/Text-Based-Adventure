@@ -48,9 +48,20 @@ This guide explains how to use your UI prefab to quickly set up a new scene for 
 
 ---
 
-## 5. Repeat for Each Scene
+## 5. Add Your Scene to the Build
 
-- Repeat these steps for all 13 scenes in your adventure.
+You have to add your new scene into the build profile.
+
+1. Click ```File -> Build Profiles -> Scene List``` and click ```Add Open Scenes```
+
+<img width="837" height="718" alt="Screenshot 2025-08-24 at 3 07 50 PM" src="https://github.com/user-attachments/assets/26935464-2632-48eb-bc0b-d07d0e6e4970" />
+
+
+---
+
+## 6. Repeat for Each Scene
+
+- Repeat these steps for all scenes in your adventure.
 - Each scene can have its own background, story, and choices, but all use the same prefab for consistency.
 
 ---

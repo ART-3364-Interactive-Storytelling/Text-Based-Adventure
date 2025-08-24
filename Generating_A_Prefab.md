@@ -1,3 +1,4 @@
+# Generating a Prefab for a Scene
 ## Scene Layout (for each scene)
 Each scene should have:
 
@@ -7,6 +8,7 @@ Each scene should have:
 * Buttons for choices. This tutorial assumes 2
 
 ## Suggested Hierarchy Example
+```
 Canvas  
 ├── Background (Image)  
 ├── StoryPanel (Panel)  
@@ -15,7 +17,7 @@ Canvas
 │   └── ButtonText1 (TextMeshProUGUI or Text)  
 └── ChoiceButton2 (Button)  
     └── ButtonText2 (TextMeshProUGUI or Text)  
-
+```
 ## Navigation Logic
 * Each button should load the next scene using `SceneManager.LoadScene("SceneName")`.
 * For terminal scenes (Credits, Exit), you can disable or hide the buttons.
@@ -118,13 +120,13 @@ public class SceneController : MonoBehaviour
 * Assign the scene fields in the Inspector to the appropriate scene namesby dragging from the hierchy to the inspector.
 
 
-### 3. Make the Prefab
+### 4. Make the Prefab
 
 1. **Select the Canvas** in the Hierarchy.
 2. **Drag the Canvas** into your Project window (e.g., into `Assets/Prefabs/`). **Make sure you're dragging the canvas and not the whole scene**
 3. This creates a prefab you can reuse in every scene.
 
-### 4. Using the Prefab
+### 5. Using the Prefab
 
 - In each new scene, drag the prefab from your Project window into the Hierarchy.
 - Set the background image, story text, and button choices in the Inspector for each scene in the Scene Data section of the Canvas.

@@ -58,7 +58,7 @@ public class SceneController : MonoBehaviour
         choiceButton1.gameObject.SetActive(false);
         choiceButton2.gameObject.SetActive(false);
         choiceButton3.gameObject.SetActive(false);
-        nextButton.gameObject.SetActive(false);
+       // nextButton.gameObject.SetActive(false);
 
         // Setup the Top-Left Button (Usually "Restart" or "Exit")
         if (!string.IsNullOrEmpty(exitText) && !string.IsNullOrEmpty(exitScene))
@@ -222,4 +222,5 @@ public class SceneController : MonoBehaviour
             yield return null;
         }
     }
+
 }
